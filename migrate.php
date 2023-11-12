@@ -44,10 +44,6 @@ if ($mysqli->query($sql) === true) {
     echo "Erro ao criar o banco de dados: " . $mysqli->error;
 }
 
-//Vou deixar uns comentários sobre o meu desenvolvimento por aqui
-//Meu windows nao conseguiu instalar docker
-
-
 function importSchedules($connTemp, $connMedical) {
   $query = "SELECT * FROM agendamentos";
   $result = mysqli_query($connTemp, $query);
